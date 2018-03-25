@@ -1,0 +1,17 @@
+{
+    "apps" : [{
+        "name"        : "work-attest",
+        "script"      : "example1.js",
+        "watch"       : false,
+        "exec_mode"   : "cluster_mode",
+        "instances"   : 4,
+        "max_memory_restart" : "500M",
+        "merge_logs": true,
+        "env": {
+            "NODE_ENV": "development"
+        },
+        "env_production" : {
+            "NODE_ENV": "production"
+        }
+    }]
+}
